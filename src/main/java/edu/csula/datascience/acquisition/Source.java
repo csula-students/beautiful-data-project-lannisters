@@ -2,7 +2,7 @@ package edu.csula.datascience.acquisition;
 
 import java.util.Collection;
 import java.util.Iterator;
-//source comment
+
 /**
  * Data source interface
  *

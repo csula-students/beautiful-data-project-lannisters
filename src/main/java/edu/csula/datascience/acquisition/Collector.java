@@ -1,7 +1,7 @@
 package edu.csula.datascience.acquisition;
 
 import java.util.Collection;
-//removed comment
+
 /**
  * Interface to define collector behavior
  *
