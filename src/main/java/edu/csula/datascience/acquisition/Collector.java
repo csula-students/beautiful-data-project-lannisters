@@ -1,7 +1,7 @@
 package edu.csula.datascience.acquisition;
 
 import java.util.Collection;
-
+//Hi this is to test commit//
 /**
  * Interface to define collector behavior
  *
