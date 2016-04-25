@@ -1,13 +1,13 @@
 package edu.csula.datascience.acquisition;
 
 /**
- * A simple model for testing
+ * Mock raw data
  */
-public class SimpleModel {
+public class Mock {
     private final String id;
     private final String content;
 
-    public SimpleModel(String id, String content) {
+    public Mock(String id, String content) {
         this.id = id;
         this.content = content;
     }
@@ -18,9 +18,5 @@ public class SimpleModel {
 
     public String getContent() {
         return content;
-    }
-
-    public static SimpleModel build(Mock data) {
-        return new SimpleModel(data.getId(), data.getContent());
     }
 }
