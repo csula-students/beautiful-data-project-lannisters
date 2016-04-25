@@ -4,15 +4,14 @@ import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Collection;
 
-public class ExecuteShellComand implements Collector<SimpleModel, MockData>{
+public class ExecuteShellComand implements Collector<Simple, Mock> {
 
 	public static void main(String[] args) {
 
 		ExecuteShellComand obj = new ExecuteShellComand();
-		
+
 		obj.save(null);
-		}
-	
+	}
 
 	private String executeCommand(String command) {
 
@@ -39,25 +38,27 @@ public class ExecuteShellComand implements Collector<SimpleModel, MockData>{
 	}
 
 	@Override
-	public Collection<SimpleModel> mungee(Collection<MockData> src) {
+	public Collection<Simple> mungee(Collection<Mock> src) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
 	@Override
-	public void save(Collection<SimpleModel> data) {
+	public void save(Collection<Simple> data) {
 		// TODO Auto-generated method stub
-		
-		ExecuteShellComand obj = new ExecuteShellComand();
-		
-		for(int i=1;i<4;i++){
-		String command = "mongoimport -d parking -c parking"+i+" --type csv --file src/main/resources/parking"+i+".csv --headerline";
-		
-		obj.executeCommand(command);
 
-		System.out.println("finished");
+		ExecuteShellComand obj = new ExecuteShellComand();
+
+		for (int i = 1; i < 4; i++) {
+			String command = "mongoimport -d parking -c parking" + i
+					+ " --type csv --file src/main/resources/parking" + i
+					+ ".csv --headerline";
+
+			obj.executeCommand(command);
+
+			System.out.println("finished");
 		}
-		
+
 	}
 
 }
