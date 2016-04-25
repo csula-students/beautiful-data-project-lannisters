@@ -3,5 +3,7 @@
 .idea/
 build/
 *.env
-
+/parking1.csv
+/parking2.csv
+/parking3.csv
 /bin/
