@@ -3,11 +3,11 @@ package edu.csula.datascience.acquisition;
 /**
  * A simple model for testing
  */
-public class SimpleModel {
+public class Simple {
     private final String id;
     private final String content;
 
-    public SimpleModel(String id, String content) {
+    public Simple(String id, String content) {
         this.id = id;
         this.content = content;
     }
@@ -20,7 +20,7 @@ public class SimpleModel {
         return content;
     }
 
-    public static SimpleModel build(Mock data) {
-        return new SimpleModel(data.getId(), data.getContent());
+    public static Simple build(Mock data) {
+        return new Simple(data.getId(), data.getContent());
     }
 }
